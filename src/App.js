@@ -10,7 +10,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2800);
+    }, 3400);
   }, []);
   return (
     <div>
@@ -19,8 +19,22 @@ function App() {
           <Lottie className="lottie" animationData={Loading}></Lottie>
         </div>
       ) : (
-        <div>
-          <h1>Jarvis GPT</h1>
+        <div className="App">
+          <aside className="sidemenu">
+            <div className="side-menu-button">
+              <span>+ </span>
+              New Chat
+            </div>
+          </aside>
+          <div className="chatbox">
+            <div className="chat-input-holder">
+              <textarea
+                rows="1"
+                className="chat-input-textarea"
+                placeholder=""
+              ></textarea>
+            </div>
+          </div>
         </div>
       )}
     </div>
