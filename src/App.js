@@ -10,7 +10,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3400);
+    }, 400);
   }, []);
   return (
     <div>
@@ -27,6 +27,20 @@ function App() {
             </div>
           </aside>
           <div className="chatbox">
+            <div className="chat-log">
+              <div className="chat-message">
+                <div className="chat-message-center">
+                  <div className="avatar"></div>
+                  <div className="message">Message</div>
+                </div>
+              </div>
+              <div className="chat-message chatgpt">
+                <div className="chat-message-center">
+                  <div className="avatar chatgpt"></div>
+                  <div className="message">I am AI</div>
+                </div>
+              </div>
+            </div>
             <div className="chat-input-holder">
               <textarea
                 rows="1"
